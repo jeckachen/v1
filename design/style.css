@@ -1,0 +1,114 @@
+html,body{
+	height: 100%;
+}
+body{
+
+}
+ .jumbotron{
+	background: url(../image/flw.jpg) no-repeat;
+	height: 100%;
+	background-size: cover; 
+	background-position: left bottom;
+	overflow: hidden; /*東西滿出來了就藏起來*/
+}
+
+section[class="container-fluid"]{  /*如果有很多個不同的class名稱就要用^上標*/ /*[]正規表示法*/ /*^從前面比對 $從後面比對*/
+	min-height: 100%;
+	padding-top: 70px;
+	background: url(../image/bg_white.jpg) no-repeat;
+}
+.carousel .carousel-control{
+	background-image: none;
+    color: #51625f;
+}
+.container-fluid h1{
+	font-family: 'Arvo', serif;
+	color: #524c50;
+}
+.container-fluid p{
+	font-family: 'Inconsolata', serif;
+	font-size:1.2em;
+	color: #51625f;
+}
+
+#About,#Links{
+	/*background-color: #cededa;*/
+	background: url(../image/bg_green.jpg) no-repeat;
+}
+.album-cover>div>img{
+	opacity: 0.8;
+}
+.album-cover>div>img:hover{
+	opacity: 1;
+}
+
+.About-text{
+	padding-top: 30px;
+}
+
+.img-camera img{
+	display: inline;
+}
+
+.img-square{
+	width:10vw;+
+	height: 10vw;
+	overflow: hidden;
+}
+
+.album-cover div[class="col-xs-2"]{
+	padding: 15px;
+}
+
+.album-name{
+	padding-top: 5px;
+}
+.gellery-photo{
+	padding-top: 20px;
+}
+
+.to-title{
+	margin-top: 200px;
+}
+
+.to-title-short{
+	margin-top: 80px;
+}
+
+.to-title-xs{
+	margin-top: 30px;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.img-square{
+		width:5vw;
+		height: 5vw;
+	}
+}
+
+.carousel-inner{
+	width:75%;
+}
+
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+.test{
+	height: 100px;
+	width: 50px;
+	border: 1px solid black;
+	float: left;
+}
