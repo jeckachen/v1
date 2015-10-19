@@ -9,6 +9,7 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop: offset.top}, '7500');
 	});
 });
+
 $(document).on('click', '.album-cover .col-xs-2', function() {
 	$(this).focus();
 });
@@ -17,7 +18,7 @@ $(document).on('click', albName[0], function() {
 	$('#carousel-album').hide();
 	$('#album-play').empty();
 	$('#album-li').empty();
-	for(var i=1; i<5; i++)
+	for(var i=1; i<6; i++)
 	{
 		$('#album-li').append('<li id="li-item" data-target="#carousel-album" data-slide-to="'+(i-1)+'"></li>');
 		$('#album-play').append('<div class="item">'+
@@ -81,6 +82,22 @@ $(document).on('click', albName[3], function() {
 	$("#carousel-album").fadeIn(1500);
 });
 
+$(document).on('click', albName[4], function() {
+	$('#carousel-album').hide();
+	$('#album-play').empty();
+	$('#album-li').empty();
+	for(var i=1; i<5; i++)
+	{
+		$('#album-li').append('<li id="li-item" data-target="#carousel-album" data-slide-to="'+(i-1)+'"></li>');
+		$('#album-play').append('<div class="item">'+
+					      '<img src="'+albDst[4]+ i +'.JPG">'+
+					    '</div>');
+	}
+	$('#album-li>#li-item:first-child').addClass('active');
+	$('#album-play>.item:first-child').addClass('active');
+	$('#album-name').html('<p>Travel</p>');
+	$("#carousel-album").fadeIn(1500);
+});
 /*End相簿部分--------------------------------------------------------------------------------------------------------------------------------*/
 
 /*連結部分--------------------------------------------------------------------------------------------------------------------------------*/

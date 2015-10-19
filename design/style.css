@@ -1,9 +1,12 @@
 html,body{
 	height: 100%;
 }
-body{
 
+/*nav樣式修改*/
+.navbar-default{
+	opacity: 0.5;
 }
+
  .jumbotron{
 	background: url(../image/bird.gif) no-repeat;
 	height: 100%;
@@ -12,14 +15,11 @@ body{
 	overflow: hidden; /*東西滿出來了就藏起來*/
 }
 
+/*頁面大小 背景 字型*/
 section[class="container-fluid"]{  /*如果有很多個不同的class名稱就要用^上標*/ /*[]正規表示法*/ /*^從前面比對 $從後面比對*/
 	min-height: 100%;
 	padding-top: 70px;
 	background: url(../image/bg_white.jpg) no-repeat;
-}
-.carousel .carousel-control{
-	background-image: none;
-    color: #51625f;
 }
 .container-fluid h1{
 	font-family: 'Arvo', serif;
@@ -30,14 +30,21 @@ section[class="container-fluid"]{  /*如果有很多個不同的class名稱就�
 	font-size:1.2em;
 	color: #51625f;
 }
+/*相片播放器設定*/
+.carousel .carousel-control{
+	background-image: none;
+    color: #51625f;
+}
 
 #About,#Links{
 	/*background-color: #cededa;*/
 	background: url(../image/bg_green.jpg) no-repeat;
 }
+
 .album-cover>div>img{
 	opacity: 0.8;
 }
+
 .album-cover>div>img:hover{
 	opacity: 1;
 }
@@ -82,7 +89,12 @@ section[class="container-fluid"]{  /*如果有很多個不同的class名稱就�
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (max-width: 768px) { 
+	.to-title{
+		margin-top: 30%;
+	}
+
+ }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { ... }
@@ -104,4 +116,15 @@ section[class="container-fluid"]{  /*如果有很多個不同的class名稱就�
 	width: 50px;
 	border: 1px solid black;
 	float: left;
+}
+
+.nav-cursor>li>a:hover{
+	cursor: pointer;
+}
+
+.carousel-indicators li{
+	margin:4px;
+}
+.carousel-indicators .active{
+	margin:3px;
 }
