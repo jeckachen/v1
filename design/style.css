@@ -85,6 +85,7 @@ section[class="container-fluid"]{  /*如果有很多個不同的class名稱就�
 .to-title-xs{
 	margin-top: 30px;
 }
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -92,6 +93,10 @@ section[class="container-fluid"]{  /*如果有很多個不同的class名稱就�
 @media (max-width: 768px) { 
 	.to-title{
 		margin-top: 30%;
+	}
+
+	.font-xs p{
+		font-size: 1em;
 	}
 
  }

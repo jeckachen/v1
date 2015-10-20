@@ -62,35 +62,19 @@ a{
 @media (max-width: 768px) { 
 	.content{
 	height: 100%;
-	border:2px solid red;
-	
+	/* border:2px solid red; */
 	}
 	.content-left{
 		height: 100%;
-		width: 90%;
-		border:2px solid gray;
-		margin-left: 5%;
+		width: 100%;
+		/* border:2px solid gray; */
+		margin-left: 0%;
 	}
 	.content-right{
 		height: 100%;
-		width: 90%;
-		border:2px solid navy;
-		margin-left: 5%;
-	}
-	.info{
-	position: absolute;
-	top:32%;
-	right:0;
-	width: 65%;
-	height: 60%;
-	background-image: url(../../image/bg_info_v2.png);
-	background-repeat: no-repeat;
-    background-size: contain;
-	/* border: 1px solid blue; */
-	padding: 0.8em;
-	}
-	.info p{
-		font-size: 1em;
+		width: 100%;
+		/* border:2px solid navy; */
+		margin-left: 0%;
 	}
  }
 
@@ -113,16 +97,40 @@ a{
 	position: absolute;
 	top:32%;
 	right:0;
-	width: 65%;
-	height: 60%;
+	width: 50%;
+	height: auto;
+	/* background-image: url(../../image/bg_info_v2.png); */
+	background-color: #697e82;
+	background-repeat: no-repeat;
+    background-size: contain;
+	/* border: 1px solid blue; */
+	padding: 1em 2em;
+}
+.info img{
+	/*width: 100%;*/
+}
+@media (max-width: 1280){
+	.info{
+	position: absolute;
+	top:32%;
+	right:0;
+	width: 70%;
+	height: 80%;
 	background-image: url(../../image/bg_info_v2.png);
 	background-repeat: no-repeat;
     background-size: contain;
 	/* border: 1px solid blue; */
-	padding: 3em;
+	padding: 2em;
+	}
+	.info p{
+		font-size: 1em;
+	}
+	h1{
+	font-family: 'cwTeXHei', 'Ubuntu', serif;
+	font-size: 1em;
+	color: #ffffff;
 }
-.info img{
-	/*width: 100%;*/
+
 }
 
 #tabs-2 img{

@@ -7,8 +7,15 @@ $(document).ready(function(){
 		var $section = '#' + $(this).attr("class");
 		var offset = $($section).offset();
 		$('html, body').animate({scrollTop: offset.top}, '7500');
+		$(".nav").find(".active").removeClass("active");
+   		$(this).parent().addClass("active");
 	});
 });
+
+/*$("#my-nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});*/
 
 $(document).on('click', '.album-cover .col-xs-2', function() {
 	$(this).focus();
