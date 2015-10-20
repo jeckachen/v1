@@ -25,11 +25,11 @@ $(document).on('click', albName[0], function() {
 	$('#carousel-album').hide();
 	$('#album-play').empty();
 	$('#album-li').empty();
-	for(var i=1; i<6; i++)
+	for(var i=1; i<7; i++)
 	{
 		$('#album-li').append('<li id="li-item" data-target="#carousel-album" data-slide-to="'+(i-1)+'"></li>');
 		$('#album-play').append('<div class="item">'+
-					      '<img src="'+albDst[0]+ i +'.JPG">'+
+					      '<img src="'+albDst[0]+ i +'.jpg">'+
 					    '</div>');
 	}
 	$('#album-li>#li-item:first-child').addClass('active');
@@ -46,7 +46,7 @@ $(document).on('click', albName[1], function() {
 	{
 		$('#album-li').append('<li id="li-item" data-target="#carousel-album" data-slide-to="'+(i-1)+'"></li>');
 		$('#album-play').append('<div class="item">'+
-					      '<img src="'+albDst[1]+ i +'.JPG">'+
+					      '<img src="'+albDst[1]+ i +'.jpg">'+
 					    '</div>');
 	}
 	$('#album-li>#li-item:first-child').addClass('active');
@@ -59,11 +59,11 @@ $(document).on('click', albName[2], function() {
 	$('#carousel-album').hide();
 	$('#album-play').empty();
 	$('#album-li').empty();
-	for(var i=1; i<6; i++)
+	for(var i=1; i<7; i++)
 	{
 		$('#album-li').append('<li id="li-item" data-target="#carousel-album" data-slide-to="'+(i-1)+'"></li>');
 		$('#album-play').append('<div class="item">'+
-					      '<img src="'+albDst[2]+ i +'.JPG">'+
+					      '<img src="'+albDst[2]+ i +'.jpg">'+
 					    '</div>');
 	}
 	$('#album-li>#li-item:first-child').addClass('active');
@@ -76,11 +76,11 @@ $(document).on('click', albName[3], function() {
 	$('#carousel-album').hide();
 	$('#album-play').empty();
 	$('#album-li').empty();
-	for(var i=1; i<5; i++)
+	for(var i=1; i<8; i++)
 	{
 		$('#album-li').append('<li id="li-item" data-target="#carousel-album" data-slide-to="'+(i-1)+'"></li>');
 		$('#album-play').append('<div class="item">'+
-					      '<img src="'+albDst[3]+ i +'.JPG">'+
+					      '<img src="'+albDst[3]+ i +'.jpg">'+
 					    '</div>');
 	}
 	$('#album-li>#li-item:first-child').addClass('active');
@@ -93,11 +93,11 @@ $(document).on('click', albName[4], function() {
 	$('#carousel-album').hide();
 	$('#album-play').empty();
 	$('#album-li').empty();
-	for(var i=1; i<5; i++)
+	for(var i=1; i<8; i++)
 	{
 		$('#album-li').append('<li id="li-item" data-target="#carousel-album" data-slide-to="'+(i-1)+'"></li>');
 		$('#album-play').append('<div class="item">'+
-					      '<img src="'+albDst[4]+ i +'.JPG">'+
+					      '<img src="'+albDst[4]+ i +'.jpg">'+
 					    '</div>');
 	}
 	$('#album-li>#li-item:first-child').addClass('active');
