@@ -3,6 +3,11 @@ $(document).ready(function() {
     	event:"mouseover"
     });
     $(".fancybox").fancybox();
+    $("#tabs-1").mCustomScrollbar({
+		scrollButtons:{  
+			enable: true  
+		}
+	});
 	$("#tabs-2").mCustomScrollbar({
 		scrollButtons:{  
 			enable: true  

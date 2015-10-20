@@ -47,14 +47,14 @@
 .ui-tabs .ui-tabs-panel {
     display: block;
     border: 1px solid #e5e4e4;
-    padding: 3em 2em;
+    padding: 2em 2em;
     background: none;
 }
 @media (max-width: 768px) { 
     .ui-tabs .ui-tabs-panel {
     display: block;
     border: 1px solid #e5e4e4;
-    padding: 1em 2em;
+    padding: 1em 1em;
     background: none;
 }
 }

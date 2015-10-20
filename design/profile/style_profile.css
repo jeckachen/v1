@@ -6,6 +6,10 @@ html,body{
 }
 header{
 	height: 20%;
+	background-image: url(../../image/bg-flower.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: contain;
 }
 h1{
 	font-family: 'cwTeXHei', 'Ubuntu', serif;
@@ -40,7 +44,10 @@ a{
 .content{
 	height: 80%;
 	/* border:2px solid red; */
-	
+	/* background-image: url(../../image/bg-flw.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 10% 50%; */
 }
 .content-left{
 	position: relative;
@@ -48,7 +55,6 @@ a{
 	width: 35%;
 	float: left;
 	/* border:2px solid gray; */
-	margin-left: 10%;
 }
 .content-right{
 	height: 100%;
@@ -58,25 +64,6 @@ a{
 	margin-left: 5%;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
-	.content{
-	height: 100%;
-	/* border:2px solid red; */
-	}
-	.content-left{
-		height: 100%;
-		width: 100%;
-		/* border:2px solid gray; */
-		margin-left: 0%;
-	}
-	.content-right{
-		height: 100%;
-		width: 100%;
-		/* border:2px solid navy; */
-		margin-left: 0%;
-	}
- }
 
 .profile-pic img{
 	position: relative;
@@ -100,7 +87,7 @@ a{
 	width: 50%;
 	height: auto;
 	/* background-image: url(../../image/bg_info_v2.png); */
-	background-color: #697e82;
+	background-color: #9ca492;
 	background-repeat: no-repeat;
     background-size: contain;
 	/* border: 1px solid blue; */
@@ -109,18 +96,61 @@ a{
 .info img{
 	/*width: 100%;*/
 }
-@media (max-width: 1280){
-	.info{
-	position: absolute;
-	top:32%;
-	right:0;
-	width: 70%;
+.bg-flower-01{
+	float: left;
+	margin-bottom: 0;
 	height: 80%;
-	background-image: url(../../image/bg_info_v2.png);
+	width: 10%;
+	background-image: url(../../image/bg-flw.jpg);
 	background-repeat: no-repeat;
-    background-size: contain;
-	/* border: 1px solid blue; */
-	padding: 2em;
+	background-position: left bottom;
+	background-size: contain;
+}
+@media (max-width: 1280){
+	
+
+}
+
+#tabs-2 img{
+	border: 2px solid white;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	.content{
+	height: 100%;
+	/* border:2px solid red; */
+	}
+	.content-left{
+		height: 100%;
+		width: 100%;
+		 border:2px solid gray;
+		margin-left: 0%;
+	}
+	.content-right{
+		height: 100%;
+		width: 100%;
+		/* border:2px solid navy; */
+		margin-left: 0%;
+	}
+	.profile-pic img{
+	position: relative;
+	z-index: 3;
+	width: 50%;
+	height: auto;
+	}
+	.info{
+		position: absolute;
+		top:32%;
+		right:0;
+		width: 80%;
+		height: auto;
+		/* background-image: url(../../image/bg_info_v2.png); */
+		background-color: #9ca492;
+		background-repeat: no-repeat;
+	    background-size: contain;
+		 border: 1px solid blue; 
+		padding: 2em;
 	}
 	.info p{
 		font-size: 1em;
@@ -129,10 +159,12 @@ a{
 	font-family: 'cwTeXHei', 'Ubuntu', serif;
 	font-size: 1em;
 	color: #ffffff;
-}
-
-}
-
-#tabs-2 img{
-	border: 2px solid white;
-}
+	}
+	.bg-flower-01{
+	float: left;
+	margin-bottom: 0;
+	height: 80%;
+	width: 0;
+	background-image: ;
+	}
+ }
