@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, /* blockquote ,*/ pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 2em;
+}
+ol { 
+   list-style-type: decimal; 
+   list-style-position: inside; 
+}
+/*reset*/
+html,body{
+	height: 100%;
+}
+
+.head{
+	height: 20%;
+	background-image: url(../image/bg-flower.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: contain;
+}
+h1{
+	font-family: 'cwTeXHei', 'Ubuntu', serif;
+	font-size: 1.2em;
+	color: #ffffff;
+}
+h2{
+	font-family: 'cwTeXHei', 'Ubuntu', serif;
+	font-size: 1.1em;
+}
+h3{
+	font-family: 'cwTeXHei', 'Ubuntu', serif;
+	font-size: 1em;
+	color:#cdb692;
+}
+h4{
+	font-family: 'cwTeXHei', 'Ubuntu', serif;
+	font-size: 1em;
+	color:#ffffff;
+}
+blockquote{
+	border-left: 0px;
+}
+.info p{
+	font-family: 'cwTeXHei', 'Ubuntu',serif;
+	font-size: 1em;
+	color: #ffffff;
+}
+p{
+	font-family: 'cwTeXHei', 'Ubuntu',serif;
+	font-size: 0.9em;
+}
+a{
+	font-family: 'cwTeXHei', serif;
+	color:#4e5e62;
+}
+.content-text{
+	color: #4e5e62;
+}
+.content{
+	height: 80%;
+	/* border:2px solid red; */
+	/* background-image: url(../../image/bg-flw.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 10% 50%; */
+	width: 90%;
+}
+.content-left{
+	position: relative;
+	height: 100%;
+	width: 35%;
+	float: left;
+	/* border:2px solid gray; */
+}
+.content-right{
+	height: 100%;
+	width: 50%;
+	float:left;
+	/* border:2px solid green; */
+	margin-left: 3%;
+}
+
+
+.profile-pic img{
+	position: relative;
+	z-index: 3;
+	width: 30%;
+	height: auto;
+}
+.background-spot{
+	position: absolute;
+	top: 10%;
+	max-width:45%;
+	margin-left: 15%;
+}
+.background-spot img{
+	width: 100%;
+}
+.info{
+	position: absolute;
+	top:32%;
+	right:0;
+	min-width: 60%;
+	height: auto;
+	/* background-image: url(../../image/bg_info_v2.png); */
+	background-color: #9ca492;
+	background-repeat: no-repeat;
+    background-size: contain;
+	/* border: 1px solid blue; */
+	padding: 2em 2em;
+}
+.info img{
+	/*width: 100%;*/
+}
+.bg-flower-01{
+	float: left;
+	margin-bottom: 0;
+	height: 80%;
+	width: 10%;
+	background-image: url(../image/bg-flw.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: contain;
+}
+
+#tabs-2 img{
+	border: 2px solid white;
+}
+
+@media (max-width: 1366px){
+	.bg-flower-01{
+		float: left;
+		margin-bottom: 0;
+		height: 80%;
+		width: 8%;
+		background-image: ;
+	}
+	.content{
+	height: 80%;
+	width: 92%;
+	}
+	.content-left{
+		position: relative;
+		height: 100%;
+		width: 25%;
+		float: left;
+		/* border:2px solid gray; */
+	}
+	.content-right{
+		height: 100%;
+		width: 60%;
+		float:left;
+		/* border:2px solid green; */
+		margin-left: 2%;
+	}
+	.profile-pic img{
+	position: relative;
+	z-index: 3;
+	width: 35%;
+	height: auto;
+}
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	.content{
+	height: 100%;
+	/* border:2px solid red; */
+	}
+	.content-left{
+		height: 100%;
+		width: 100%;
+		margin-left: 0%;
+	}
+	.content-right{
+		height: 100%;
+		width: 100%;
+		/* border:2px solid navy; */
+		margin-left: 0%;
+	}
+	.profile-pic img{
+	position: relative;
+	z-index: 3;
+	width: 50%;
+	height: auto;
+	}
+	.info{
+		position: absolute;
+		top:40%;
+		right:0;
+		width: 90%;
+		height: auto;
+		/* background-image: url(../../image/bg_info_v2.png); */
+		background-color: #9ca492;
+		background-repeat: no-repeat;
+	    background-size: contain;
+		padding: 2em;
+	}
+	.info p{
+		font-size: 1em;
+	}
+	h1{
+	font-family: 'cwTeXHei', 'Ubuntu', serif;
+	font-size: 1em;
+	color: #ffffff;
+	}
+	.bg-flower-01{
+	float: left;
+	margin-bottom: 0;
+	height: 80%;
+	width: 0;
+	background-image: ;
+	}
+ }

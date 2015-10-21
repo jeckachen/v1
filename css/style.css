@@ -1,0 +1,139 @@
+html,body{
+	height: 100%;
+}
+
+/*nav樣式修改*/
+.navbar-default{
+	opacity: 0.5;
+}
+
+ .jumbotron{
+	background: url(../image/bird.gif) no-repeat;
+	height: 100%;
+	background-size: cover; 
+	background-position: center bottom;
+	overflow: hidden; /*東西滿出來了就藏起來*/
+}
+
+/*頁面大小 背景 字型*/
+section[class="container-fluid"]{  /*如果有很多個不同的class名稱就要用^上標*/ /*[]正規表示法*/ /*^從前面比對 $從後面比對*/
+	min-height: 100%;
+	padding-top: 70px;
+	background: url(../image/bg_white.jpg) no-repeat;
+}
+.container-fluid h1{
+	font-family: 'Arvo', serif;
+	color: #524c50;
+}
+.container-fluid p{
+	font-family: 'Inconsolata', serif;
+	font-size:1.2em;
+	color: #51625f;
+}
+/*相片播放器設定*/
+.carousel .carousel-control{
+	background-image: none;
+    color: #51625f;
+}
+
+#About,#Links{
+	/*background-color: #cededa;*/
+	background: url(../image/bg_green.jpg) no-repeat;
+}
+
+.album-cover>div>img{
+	opacity: 0.8;
+}
+
+.album-cover>div>img:hover{
+	opacity: 1;
+}
+
+.About-text{
+	padding-top: 30px;
+}
+
+.img-camera img{
+	display: inline;
+}
+
+.img-square{
+	width:10vw;
+	height: 10vw;
+	overflow: hidden;
+}
+
+.album-cover div[class="col-xs-2"]{
+	padding: 15px;
+}
+
+.album-name{
+	padding-top: 5px;
+}
+.gellery-photo{
+	padding-top: 20px;
+}
+
+.to-title{
+	margin-top: 200px;
+}
+
+.to-title-short{
+	margin-top: 80px;
+}
+
+.to-title-xs{
+	margin-top: 30px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	.to-title{
+		margin-top: 30%;
+	}
+
+	.font-xs p{
+		font-size: 1em;
+	}
+	.container-fluid h1{
+		font-family: 'Arvo', serif;
+		color: #524c50;
+		font-size: 1.5em;
+	}
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.img-square{
+		width:5vw;
+		height: 5vw;
+	}
+}
+
+.carousel-inner{
+	width:75%;
+}
+
+.test{
+	height: 100px;
+	width: 50px;
+	border: 1px solid black;
+	float: left;
+}
+
+.nav-cursor>li>a:hover{
+	cursor: pointer;
+}
+
+.carousel-indicators li{
+	margin:4px;
+}
+.carousel-indicators .active{
+	margin:3px;
+}
